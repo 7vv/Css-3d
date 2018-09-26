@@ -1,5 +1,6 @@
 window.onload = () => {
-    mainContainerInit();
+    // mainContainerInit();
+    mainTurnContainerInit();
 }
 
 mainContainerInit = () => {    
@@ -20,4 +21,11 @@ mainContainerInit = () => {
 
         $(element).css('transform', matrix.join(','));              
     }, 100)
+}
+
+mainTurnContainerInit = () => {
+    const element = document.querySelector('.turn-container .image-box');
+    element.addEventListener('click', () => {
+        element.classList.toggle('turn-flippend');
+    })
 }
