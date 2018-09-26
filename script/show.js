@@ -18,7 +18,6 @@ mainContainerInit = () => {
 
         matrix[1] = Number(martixFloat - angular).toFixed(1);                
 
-        $(element).css('transform', matrix.join(','));        
-        console.log($(element).css('transform'))        
+        $(element).css('transform', matrix.join(','));              
     }, 100)
 }
